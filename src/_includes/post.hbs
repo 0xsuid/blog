@@ -1,0 +1,10 @@
+---
+layout: base.hbs
+---
+<article>{{{content}}}</article>
+
+<aside>
+    {{#each (randomItem facts)}}
+        <p>{{this}}</p>
+    {{/each}}
+</aside>
