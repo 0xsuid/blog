@@ -1,7 +1,7 @@
 ---
 title: My first page
-layout: layouts/base.hbs
-templateEngineOverride: hbs,md
+layout: layouts/base.njk
+templateEngineOverride: njk,md
 ---
 ## Cat of the Day
 
@@ -9,4 +9,4 @@ templateEngineOverride: hbs,md
 
 ## Blog Posts
 
-{{> postlist}}
+{% include "postlist.njk" %}
