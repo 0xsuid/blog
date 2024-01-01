@@ -2,6 +2,6 @@
 title: Hello World
 ---
 
-# First Blog
+## First Blog
 
 And it works

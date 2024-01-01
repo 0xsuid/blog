@@ -1,9 +1,9 @@
 ---
 title: My first page
-layout: base.hbs
+layout: layouts/base.hbs
 templateEngineOverride: hbs,md
 ---
-# Cat of the Day
+## Cat of the Day
 
 <img src="{{ catpic }}" />
 
