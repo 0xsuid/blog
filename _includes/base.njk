@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/style.css" />
 </head>
-<body>
-    <header>
-        {{ header }}
-    </header>
-    <main>
+<body class="mx-auto lg:max-w-5xl bg-gray-600 text-white">
+    {% include "header.njk" %}
+    <main class="mx-auto {% if extraClass %}{{ extraClass }}{% endif %}">
         {{ content | safe }}
     </main>
 </body>

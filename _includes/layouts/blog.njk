@@ -1,0 +1,12 @@
+---
+layout: base.njk
+extraClass: grid grid-cols-2 gap-6
+---
+{% for post in collections.posts %}
+<article class="grid justify-items-center text-center">
+    <a href="{{ post.url }}">
+        <img src="https://placehold.co/1024x576/EEE/31343C?font=montserrat&text=Meowww" alt="cat" class="my-4">
+        <h2>{{ post.data.title }}</h2>
+    </a>
+</article>
+{% endfor %}
