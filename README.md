@@ -1,9 +1,11 @@
 # Blog
 
-- Blog Created with 11ty -> Handlebars & Markdown.
+![Screenshot](public/assets/screenshot.PNG?raw=true "Screenshot")
+
+- Blog Created with 11ty -> Nunjucks & Markdown.
 - To build run ``` npm run build ```
-- build will be available in public directory.
-  
+- build will be available in _site directory.
+
 ## References
 
 - https://www.11ty.dev/docs/
