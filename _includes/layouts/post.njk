@@ -1,7 +1,12 @@
 ---
-layout: base.njk
-extraClass: lg:max-w-xl
+layout: base
+mainClass: lg:max-w-2xl
 ---
+<hgroup>
+  {% if title %}<h1 class="{{ headingTitleClass }}">{{ title }}</h1>{% endif %}
+  {% if headingImage %}<img src="{{ headingImage }}" alt="{{ headingImageAlt }}">{% endif %}
+</hgroup>
+
 <article>{{ content | safe }}</article>
 
 <aside>

@@ -3,16 +3,22 @@
 @tailwind utilities;
 
 @layer base {
-    nav {
-        @apply text-2xl;
-    }
-    h1 {
-      @apply text-3xl py-6 font-black;
-    }
-    h2 {
-      @apply text-2xl font-bold;
-    }
-    p {
-      @apply text-2xl leading-8 py-4 font-mono;
-    }
+  nav {
+      @apply text-2xl;
   }
+  h1 {
+    @apply text-3xl py-6 font-black;
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  p {
+    @apply text-2xl leading-8 my-4 font-mono;
+  }
+  hgroup{
+    @apply py-4;
+  }
+  hgroup h1{
+    @apply text-5xl text-center my-5;
+  }
+}

@@ -1,9 +1,8 @@
 ---
-title: My first page
-layout: layouts/post.njk
-templateEngineOverride: njk,md
+layout: layouts/post
+title: Harsh Godhani Here
+headingTitleClass: text-left
 ---
-# Harsh Godhani Here
 
 Chew the plant fat baby cat best buddy little guy. Pushes butt to face. Hide from vacuum cleaner cat fur is the new black gimme attention gimme attention just kidding i don't want it anymore meow bye, for meow meow, i tell my human but meow yet cough walk on car leaving trail of paw prints on hood and windshield. Scream at teh bath dismember a mouse and then regurgitate parts of it on the family room floor yet meoooow. Immediately regret falling into bathtub.
 

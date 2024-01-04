@@ -9,7 +9,7 @@
 </head>
 <body class="mx-auto lg:max-w-5xl bg-gray-600 text-white">
     {% include "header.njk" %}
-    <main class="mx-auto {% if extraClass %}{{ extraClass }}{% endif %}">
+    <main class="mx-auto {% if mainClass %}{{ mainClass }}{% endif %}">
         {{ content | safe }}
     </main>
 </body>
