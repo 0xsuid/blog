@@ -4,6 +4,7 @@ const postCss = require("postcss");
 const tailwind = require("tailwindcss");
 const autoPrefixer = require("autoprefixer");
 const cssNano = require("cssnano");
+const htmlmin = require("html-minifier");
 
 const pluginBundle = require("@11ty/eleventy-plugin-bundle");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -53,6 +54,19 @@ module.exports = function (eleventyConfig) {
             return 0.5 - Math.random();
         });
         return arr.slice(0, 1);
+    });
+
+    eleventyConfig.addTransform("htmlmin", function(content) {
+        if( this.page.outputPath && this.page.outputPath.endsWith(".html") ) {
+            let minified = htmlmin.minify(content, {
+            useShortDoctype: true,
+            removeComments: true,
+            collapseWhitespace: true
+            });
+            return minified;
+        }
+
+        return content;
     });
 
     return {
