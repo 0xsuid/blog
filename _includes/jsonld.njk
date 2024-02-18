@@ -1,0 +1,32 @@
+{
+    "@context": "https://schema.org",
+    "@type": "{{ 'Article' if meta.og.type === "article" else 'WebSite'}}",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Harsh Godhani",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ 'logo.svg' | fullUrl}}"
+        }
+    },
+    {% if meta.og.type === "article" %}
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Harsh Godhani",
+            "url": "{{ baseUrl }}"
+        }
+    ],
+    {% endif %}
+    "headline": "{{ title | safe }}",
+    "url": "{{ page.url | fullUrl }}",
+    "headline": "{{ title | safe }}",
+    "image": {
+        "@type": "ImageObject",
+        "url": "{{ meta.og.image | fullUrl if meta.og.image }}"
+    },
+    "description": "{{ meta.description | safe }}",
+    "mainEntityOfPage": "{{ page.url | fullUrl }}",
+    "datePublished": "{% published %}",
+    "dateModified": "{% modified %}"
+}

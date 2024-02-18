@@ -13,7 +13,7 @@
     @apply text-2xl font-bold;
   }
   p {
-    @apply text-2xl leading-8 my-4 font-mono;
+    @apply text-xl leading-8 my-4 font-mono;
   }
   hgroup{
     @apply py-4;

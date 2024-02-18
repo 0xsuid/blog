@@ -1,4 +1,9 @@
 {
     "layout": "layouts/post",
-    "tags": "posts"
+    "tags": "posts",
+    "meta": {
+        "og": {
+            "type": "article"
+        }
+    }
 }
