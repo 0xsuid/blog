@@ -72,11 +72,6 @@ module.exports = function (eleventyConfig) {
             );
     });
 
-    eleventyConfig.addFilter('htmlDateTimeString', (dateObj) => {
-		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-		return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toISO();
-	});
-
     eleventyConfig.addFilter("fullUrl", function (url = '', base = eleventyConfig.globalData.baseUrl) {
         try {
           return new URL(url, base).href;
